@@ -70,7 +70,9 @@ const FinanceSection = () => {
     >
       <Flex>
         <InputGroup shadow="md" mb={4} borderRadius="10px">
-          <InputLeftElement children={<FiSearch />} />
+          <InputLeftElement>
+            <FiSearch />
+          </InputLeftElement>
           <Input borderRadius="10px" type="text" placeholder="Search" />
         </InputGroup>
         <IconButton
@@ -152,13 +154,10 @@ const FinanceSection = () => {
         </TabPanels>
         <TabList>
           {cards.map((card, index) => (
-            <Tab
-              fontSize="xs"
-              bg="#fff"
-              mx={1}
-              key={index}
-              children={index + 1}
-            />
+            <Tab fontSize="xs" bg="#fff" mx={1} key={index}>
+              {" "}
+              {index + 1}{" "}
+            </Tab>
           ))}
         </TabList>
       </Tabs>
@@ -185,20 +184,18 @@ const FinanceSection = () => {
         Card number
       </Text>
       <InputGroup shadow="md" borderRadius="10px">
-        <InputLeftElement
-          pointerEvents="none"
-          children={<FiCreditCard color="gray.700" />}
-        />
+        <InputLeftElement pointerEvents="none">
+          <FiCreditCard color="gray.700" />
+        </InputLeftElement>
         <Input type="number" placeholder="xxxx xxxx xxxx xxxx" />
       </InputGroup>
       <Text color="gray" mt={4} mb={2}>
         Sum
       </Text>
       <InputGroup borderRadius="10px" shadow="md">
-        <InputLeftElement
-          pointerEvents="none"
-          children={<FiDollarSign color="gray.700" />}
-        />
+        <InputLeftElement pointerEvents="none">
+          <FiDollarSign color="gray.700" />
+        </InputLeftElement>
         <Input type="number" placeholder="130.00" />
       </InputGroup>
       <Button
