@@ -155,8 +155,7 @@ const FinanceSection = () => {
         <TabList>
           {cards.map((card, index) => (
             <Tab fontSize="xs" bg="#fff" mx={1} key={index}>
-              {" "}
-              {index + 1}{" "}
+              {index + 1}
             </Tab>
           ))}
         </TabList>
