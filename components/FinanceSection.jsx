@@ -63,7 +63,8 @@ const FinanceSection = () => {
   return (
     <Flex
       w={["100%", "100%", "35%"]}
-      p="3%"
+      p={["5%", "5%", "3%", "3%"]}
+      py={["8%", "8%", "3%", "3%"]}
       bg="rgba(120,120,120, 0.1)"
       flexDir="column"
       overflow="auto"

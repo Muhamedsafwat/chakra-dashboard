@@ -11,7 +11,8 @@ const MainSection = () => {
   return (
     <Flex
       w={["100%", "100%", "60%", "55%"]}
-      p="3%"
+      p={["5%", "5%", "3%", "3%"]}
+      py={["8%", "8%", "3%", "3%"]}
       minH="100vh"
       overflow="auto"
       flexDir="column"

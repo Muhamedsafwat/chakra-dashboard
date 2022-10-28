@@ -113,7 +113,7 @@ const MyTable = () => {
 
   return (
     <Flex flexDir="column">
-      <Flex overflow="auto">
+      <Flex overflow="auto" className="table-container">
         <Table variant="unstyled" mt={4}>
           <Thead>
             <Tr color="gray">

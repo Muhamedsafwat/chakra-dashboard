@@ -16,7 +16,7 @@ a {
   box-sizing: border-box;
 }
 
-/* sidebar */
+/* sidebar items */
 .sidebar-item {
   transition: 0.2s;
   cursor: pointer;
@@ -31,15 +31,15 @@ a {
 }
 
 /* scrollbar */
-*::-webkit-scrollbar {
+*:not(.table-container)::-webkit-scrollbar {
   width: 5px;
 }
 
-*::-webkit-scrollbar-track {
+*:not(.table-container)::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-*::-webkit-scrollbar-thumb {
+*:not(.table-container)::-webkit-scrollbar-thumb {
   background-color: #b57295;
   border-radius: 5px;
 }

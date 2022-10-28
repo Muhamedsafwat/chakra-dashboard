@@ -45,10 +45,11 @@ const Sidebar = () => {
             borderRadius="50%"
             icon={colorMode === "light" ? <FiMoon color="black" /> : <FiSun />}
             onClick={toggleColorMode}
-            position="absolute"
-            bottom={5}
-            right={5}
+            position="fixed"
+            bottom={[2, 2, 5]}
+            right={[2, 2, 5]}
             shadow="xl"
+            zIndex={9}
           />
 
           <Heading
@@ -85,7 +86,7 @@ const Sidebar = () => {
                 <Text
                   display={["flex", "flex", "none", "flex", "flex"]}
                   fontSize="large"
-                  ml="1em"
+                  ml={[0, 0, 0, "1em", "1em"]}
                 >
                   {item.title}
                 </Text>
